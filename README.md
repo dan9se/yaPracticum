@@ -11,7 +11,7 @@
 * ```npm i``` — установка все зависимостей из [package](package.json),
 * ```npm run dev``` — запуск dev стенда,
 * ```npm run build``` — сборка проекта,
-* ```node server.mjs``` — запуск сервера.
+* ```node server.mjs или npm start``` — запуск сервера.
 
 ### Доступные страницы
 
