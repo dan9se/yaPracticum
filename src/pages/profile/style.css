@@ -186,3 +186,7 @@ input {
   flex-direction: column;
   gap: 3em;
 }
+
+.hidden {
+  display: none;
+}

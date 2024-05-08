@@ -46,7 +46,3 @@ body {
 .button:focus-visible {
   outline: 4px auto #646cff;
 }
-
-.hidden {
-  display: none;
-}

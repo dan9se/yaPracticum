@@ -1,5 +1,5 @@
-import './style.css'
 import '@/public/base/base.css'
+import './style.css'
 
 import templBadges from '@/components/badges/badge'
 import Handlebars from 'handlebars'
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="chat-list">
           <div class="chat-element" id="chat">
             <div class="avatar" id="avatar">
-              <img src="/public/empty_avatar.svg" alt="">
+              <img src="/empty_avatar.svg" alt="">
             </div>
 
             <div class="message-element">
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="chat-header">
           <div style="display: flex; gap: 1em">
             <div class="avatar" id="avatar" style="width: 2em; height: 2em;">
-              <img src="/public/empty_avatar.svg" alt="">
+              <img src="/empty_avatar.svg" alt="">
             </div>
             <span>Name</span>
           </div>

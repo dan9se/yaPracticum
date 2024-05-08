@@ -1,10 +1,12 @@
 import express from "express"
+import http from 'http';
 
 const app = express()
-const port = 3000
+const PORT = 3000;
+const server = http.createServer(app);
 
 app.use('/', express.static('src/dist'));
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+server.listen(PORT, () => {
+    console.log(`App listening on port ${PORT}`)
 })
