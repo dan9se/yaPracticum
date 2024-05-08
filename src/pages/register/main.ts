@@ -48,6 +48,3 @@ document.addEventListener('DOMContentLoaded', () => {
   login.addEventListener('click', () => window.location.href = '/')
 })
 
-
-
-

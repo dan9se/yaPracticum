@@ -49,3 +49,4 @@
   .input__field{
     &:required,&:invalid { box-shadow:none; }
   }
+  
