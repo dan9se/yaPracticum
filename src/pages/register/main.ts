@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const login = document.querySelector<HTMLButtonElement>('#login-button')!
   
 
-  register.addEventListener('click', () => window.location.href = '/pages/login/index.html')
-  login.addEventListener('click', () => window.location.href = '/pages/login/index.html')
+  register.addEventListener('click', () => window.location.href = '/')
+  login.addEventListener('click', () => window.location.href = '/')
 })
 
 

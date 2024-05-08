@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   root.innerHTML = template
   
-  document.getElementById('login-button')!.addEventListener('click', () => window.location.href = '/pages/login/index.html')
+  document.getElementById('login-button')!.addEventListener('click', () => window.location.href = '/index.html')
 })
 
 

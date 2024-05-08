@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
 
-  document.getElementById('exit')!.addEventListener('click', () => window.location.href = '/pages/login/index.html')
+  document.getElementById('exit')!.addEventListener('click', () => window.location.href = '/')
 })
 
 
