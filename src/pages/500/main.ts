@@ -1,4 +1,5 @@
-import "./style.css"
+import "@/public/base/base.css"
+import "@/public/base/error_page.css"
 
 import templButton from '@/components/button/button'
 import Handlebars from 'handlebars'
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const tmpButton = Handlebars.compile(templButton)
 
   const template = `
-    <div class="login-screen">
+    <div class="error-screen">
       <div> 
         <h1 style="margin: 0; align-self: center;">500</h1>
         <span style="margin: 0; align-self: center;">Мы уже фиксим</span>

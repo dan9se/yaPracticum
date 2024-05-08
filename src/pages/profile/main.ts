@@ -1,3 +1,4 @@
+import "@/public/base/base.css"
 import './style.css'
 import templAvatar from '@/components/avatar/avatar'
 import templProfile from '@/components/profile_element/profile'
@@ -55,12 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
             ${ fields.map((a) => templateProfile({ label: a.label, value: 'value', id: a.key, input: a.input })).join('\n') }
           </div>
 
-          <div class="hidden-element" id="profile-password">
+          <div class="hidden" id="profile-password">
             ${templateProfile({ label: 'Старый пароль', value: '', id: 'oldPassword', input: 'password' })}
             ${templateProfile({ label: 'Новый пароль', value: '', id: 'newPassword', input: 'password' })}
             ${templateProfile({ label: 'Повторите новый пароль', value: '', id: 're-newPassword', input: 'password' })}
           </div>
-
 
           <div class="buttons block" id="change-block">
             ${tmpButton({ class: 'change-button', id: 'change', label: 'Изменить данные'})}
@@ -68,11 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
             ${tmpButton({ class: 'exit-button', id: 'exit', label: 'Выйти'})}
           </div>
 
-          <div class="buttons hidden-element" id="save-info">
+          <div class="buttons hidden" id="save-info">
             ${tmpButton({ class: 'save-button', id: 'save-info', label: 'Сохранить'})}
           </div>
           
-          <div class="buttons hidden-element" id="save-password-button">
+          <div class="buttons hidden" id="save-password-button">
             ${tmpButton({ class: 'save-button', id: 'save-password', label: 'Сохранить'})}
           </div>
         </div>
@@ -86,31 +86,31 @@ document.addEventListener('DOMContentLoaded', () => {
   
   //#region infoBlock
   document.getElementById('change')!.addEventListener('click', () =>{ 
-    document.getElementById("change-block")!.classList.add("hidden-element") 
-    document.getElementById("save-info")!.classList.remove('hidden-element')
+    document.getElementById("change-block")!.classList.add("hidden") 
+    document.getElementById("save-info")!.classList.remove('hidden')
   })
   
   document.getElementById('save-info')!.addEventListener('click', () => {
-    document.getElementById("change-block")!.classList.remove('hidden-element')
-    document.getElementById("save-info")!.classList.add("hidden-element") 
+    document.getElementById("change-block")!.classList.remove('hidden')
+    document.getElementById("save-info")!.classList.add("hidden") 
   })
   //#endregion infoBlock
 
   //#region passwordBlock
   document.getElementById('change-password')!.addEventListener('click', () =>{ 
-    document.getElementById("profile-info")!.classList.add("hidden-element") 
-    document.getElementById("change-block")!.classList.add("hidden-element") 
+    document.getElementById("profile-info")!.classList.add("hidden") 
+    document.getElementById("change-block")!.classList.add("hidden") 
 
-    document.getElementById("profile-password")!.classList.remove('hidden-element')
-    document.getElementById("save-password-button")!.classList.remove('hidden-element')
+    document.getElementById("profile-password")!.classList.remove('hidden')
+    document.getElementById("save-password-button")!.classList.remove('hidden')
   })
 
   document.getElementById('save-password')!.addEventListener('click', () =>{ 
-    document.getElementById("profile-password")!.classList.add("hidden-element") 
-    document.getElementById("save-password-button")!.classList.add("hidden-element") 
+    document.getElementById("profile-password")!.classList.add("hidden") 
+    document.getElementById("save-password-button")!.classList.add("hidden") 
 
-    document.getElementById("change-block")!.classList.remove('hidden-element')
-    document.getElementById("profile-info")!.classList.remove('hidden-element')
+    document.getElementById("change-block")!.classList.remove('hidden')
+    document.getElementById("profile-info")!.classList.remove('hidden')
   })
   //#endregion passwordBlock
 
@@ -130,9 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   //#endregion Modal
 
-  
-
   document.getElementById('exit')!.addEventListener('click', () => window.location.href = '/')
+  document.getElementById('return')!.addEventListener('click', () => window.location.href = '/pages/chat/index.html')
 })
 
 

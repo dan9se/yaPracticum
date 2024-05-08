@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
 
       <div class="block" style="justify-content: center; padding-top: 2em">
-        ${tmpButton({label: 'Зарегистрироваться', id: 'register-button', class: "register-button" })}
-        ${tmpButton({label: 'Войти', id: 'login-button', class: "login-button" })}
+        ${tmpButton({label: 'Зарегистрироваться', id: 'register-button', class: "button register-button" })}
+        ${tmpButton({label: 'Войти', id: 'login-button', class: "button login-button" })}
       </div>
     </div>
   `

@@ -1,9 +1,10 @@
 import '@/public/base/base.css'
 import './style.css'
+
 import templButton from '@/components/button/button'
 import templInput from '@/components/input_box/input'
 import Handlebars from 'handlebars'
-import { loginValue } from "./counter" 
+import { loginValue } from "./modules/inputValue" 
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.querySelector('#app')
@@ -22,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
 
       <div class="block">
-        ${tmpButton({label: 'Авторизоваться', id: 'login-button', class: "login-button" })}
-        ${tmpButton({label: 'Нет аккаунта?', id: 'register-button', class: "register-button" })}
+        ${tmpButton({label: 'Авторизоваться', id: 'login-button', class: "button login-button" })}
+        ${tmpButton({label: 'Нет аккаунта?', id: 'register-button', class: "button register-button" })}
       </div>
     </div>
   `
