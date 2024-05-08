@@ -9,7 +9,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^20.12.7",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "handlebars": "^4.7.8",
+    "postcss-nesting": "^12.1.2",
+    "vite-plugin-handlebars": "^2.0.0"
   }
 }
