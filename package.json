@@ -19,5 +19,8 @@
     "handlebars": "^4.7.8",
     "postcss-nesting": "^12.1.2",
     "vite-plugin-handlebars": "^2.0.0"
+  },
+  "engines": {
+    "node": "16.14.0"
   }
 }
