@@ -22,26 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const tmpButton = Handlebars.compile(templButton)
 
   const template = `
-    <div id="change-avatar" class="modal">
-      <div class="modal-content">
-        <div class="modal-avatar">
-          <h3 id="info-load" style="margin: 0;">Загрузите файл</h3>
+    <main class="profile-block">
+      <div id="change-avatar" class="modal">
+        <div class="modal-content">
+          <div class="modal-avatar">
+            <h3 id="info-load" style="margin: 0;">Загрузите файл</h3>
 
-          <div class="one-file">
-            <label style="cursor: pointer" for="file-1">Выбрать файл на компьютере</label>
-            <input style="display: none" name="file-1" id="ile-input" type="file">
-          </div>
-          
-          <div>
-            ${tmpButton({ class: 'change-avatar', id: 'change-avatar', label: 'Поменять'})}
-          </div>
+            <div class="one-file">
+              <label style="cursor: pointer" for="file-1">Выбрать файл на компьютере</label>
+              <input style="display: none" name="file-1" id="ile-input" type="file">
+            </div>
+            
+            <div>
+              ${tmpButton({ class: 'change-avatar', id: 'change-avatar', label: 'Поменять'})}
+            </div>
 
+          </div>
         </div>
       </div>
-    </div>
-    
 
-    <div class="profile-block">
       <div class="block return">
         ${tmpButton({ class: 'return-button', id: 'return', label: 'Back', icon: 'public/left-arrow.svg'})}
       </div>
@@ -77,8 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
       </div>
-
-    </div>
+    </main>
   `
 
   root.innerHTML = template

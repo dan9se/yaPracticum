@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const tmpButton = Handlebars.compile(templButton)
 
   const template = `
-    <div class="error-screen">
+    <main class="error-screen">
       <div> 
         <h1 style="margin: 0; align-self: center;">404</h1>
         <span style="margin: 0; align-self: center;">Не туда попали</span>
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="block" style="justify-content: center">
         ${tmpButton({label: 'Назад к чатам', id: 'login-button', class: "login-button" })}
       </div>
-    </div>
+    </main>
   `
 
   root.innerHTML = template

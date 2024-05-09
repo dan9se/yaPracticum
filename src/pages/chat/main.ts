@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const tmpBadge = Handlebars.compile(templBadges)
 
   const template = `
-    <div class="chat-block">
+    <main class="chat-block">
       <div class="chats">
         <div class="header"> 
           <div class="profile-button" id="to-profile">
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="chat-list">
           <div class="chat-element" id="chat">
             <div class="avatar" id="avatar">
-              <img src="/empty_avatar.svg" alt="">
+              <img src="/empty_avatar.svg" alt="avatar">
             </div>
 
             <div class="message-element">
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="chat-header">
           <div style="display: flex; gap: 1em">
             <div class="avatar" id="avatar" style="width: 2em; height: 2em;">
-              <img src="/empty_avatar.svg" alt="">
+              <img src="/empty_avatar.svg" alt="avatar">
             </div>
             <span>Name</span>
           </div>
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
     </div>
-  </div>
+  </main>
   `
 
   root.innerHTML = template
