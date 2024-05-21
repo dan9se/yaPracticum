@@ -1,0 +1,8 @@
+.profile-element{
+  display: flex;
+  flex-direction: row;
+  width: 30em;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #EAEAEA;
+}

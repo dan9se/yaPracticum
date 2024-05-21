@@ -1,0 +1,192 @@
+.profile-block{
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 5% 95%
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.profile h3 {
+  margin: 0;
+}
+
+.block{ 
+  display: flex;
+  flex-direction: column;
+}
+
+.info{
+  gap: 1em
+}
+
+.buttons{
+  padding-top: 2.5em;
+  gap: 0.4em
+}
+
+.change-button{
+  padding: 0.4em;
+
+  color: #3369F3;
+  background-color: transparent;
+
+  border: 1px solid transparent;
+  border-bottom: 1px solid #EAEAEA;
+
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  font-weight: 500;
+  text-align: start;
+}
+
+.change-button:hover {
+  font-weight: 600;
+}
+
+.exit-button{
+  color: #FF0000;
+  background-color: transparent;
+
+  border: 1px solid transparent;
+  border-bottom: 1px solid #EAEAEA;
+
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  text-align: start;
+}
+.exit-button:hover {
+  font-weight: 600;
+}
+
+.return{
+  align-items: center;
+  justify-content: center;
+
+  background-color: #FBFBFB;
+  border-right: 1px solid #EAEAEA;
+}
+
+.return-button {
+  height: 3em;
+  width: 3em;
+
+  border: none;
+  background-color: #3369F3;
+  border-radius: 25px;
+  color: white;
+
+  cursor: pointer;
+}
+
+.load-avatar{
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 1fr 1.5fr 1fr;
+
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+
+}
+
+input {
+  border: unset;
+}
+
+
+.change-avatar{
+  width: 100%;
+  
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  
+  font-size: small;
+
+  color: white;
+  background-color: #3369F3;
+
+  border-radius: 5px;
+}
+
+
+.save-button {
+  width: 100%;
+  
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  font-size: small;
+
+  color: white;
+  background-color: #3369F3;
+
+  border-radius: 5px;
+}
+
+.centered {
+  position: fixed;
+  border: 2px solid white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  background-color: white;
+  
+  height: 17em;
+  width: 15em;
+  border-radius: 1em;
+
+  padding: 0.5em;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Content */
+.modal-content {  
+  position: relative;
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.modal-avatar{
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.hidden {
+  display: none;
+}

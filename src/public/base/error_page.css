@@ -1,0 +1,36 @@
+.error-screen{
+  width: 20em;
+  height: fit-content;
+
+  background-color: white;
+
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 1.6em;
+  padding: 2em;
+}
+
+.block{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.login-button {
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  font-size: small;
+  color: #3369F3;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.login-button:hover{
+
+  border-color: #646cff;
+}
+.login-button:focus,
+.login-button:focus-visible {
+  outline: 4px auto #646cff;
+}

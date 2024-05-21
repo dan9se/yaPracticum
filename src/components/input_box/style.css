@@ -1,0 +1,52 @@
+.input__group {
+    position: relative;
+    padding: 15px 0 0;
+  }
+
+  
+.input__field {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #3369F3;
+    outline: 0;
+    font-size: 0.8rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  
+    &::placeholder {
+      color: transparent;
+    }
+  
+    &:placeholder-shown ~ .input__label {
+      font-size: 0.8rem;
+      cursor: text;
+      top: 23px;
+    }
+  }
+  
+  .input__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 0.8rem;
+    color: #999999;
+  }
+  
+  .input__field:focus {
+    ~ .input__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 0.8rem;
+      color: #999999; 
+    }
+  }
+  /* reset input */
+  .input__field{
+    &:required,&:invalid { box-shadow:none; }
+  }
+
